@@ -1,0 +1,44 @@
+.sports-container {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.sports-container > h1 {
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.sports-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 10px 30px 30px;
+}
+
+.sports-box {
+    background-color: lightblue;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px gray;
+}
+
+.sports-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.sports-box h2 {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.sports-box a {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}

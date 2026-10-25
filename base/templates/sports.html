@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/sports.css' %}">
+<div class="sports-container">
+
+    <h1>Sports</h1>
+    <div class="sports-grid">
+
+      {% for i in data %}
+        <div class="sports-box">
+
+            <img src="{{i.image}}" alt="">
+            <h2>{{i.desc|truncatewords:8}}</h2>
+            <a href="{% url 'read' i.id %}">Read More</a>
+        </div>
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/international.css' %}">
+
+<div class="international-container">
+    <h1>International</h1>
+    <div class="international-grid">
+        {% for i in data %}
+        <div class="international-box">
+            <img src="{{i.image}}" alt="">
+            <h2>{{i.desc|truncatewords:8}}</h2>
+            <a href="{% url 'read' i.id %}">Read More</a>
+
+        </div>
+
+        {% endfor %}
+    </div>
+
+</div>
+
+{% endblock %}

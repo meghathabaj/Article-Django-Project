@@ -1,0 +1,39 @@
+.read-container {
+    padding-top: 100px;
+}
+
+.read-box {
+    width: 600px;
+    background-color: lightblue;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px gray;
+}
+
+.read-box img {
+    width: 400px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.read-box h1 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+.read-box h2 {
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.read-box a {
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}

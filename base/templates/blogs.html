@@ -1,0 +1,22 @@
+{% extends 'main.html' %}
+{% block content %}
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+<div class="blogs-container">
+
+    <h1>Blogs</h1>
+    <div class="blogs-grid">
+
+        {% for i in data %}
+        <div class="blogs-box">
+
+            <img src="{{i.image}}" alt="">
+            <h2>{{i.desc|truncatewords:8}}</h2>
+            <a href="{% url 'read' i.id %}">Read More</a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
